@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  background-color: rgb(0, 89, 255);
+}
+
+body .gambar {
+  width: 60%;
+  background-color: rgb(238, 238, 238);
+  padding: 20px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 1px 0 5px white;
+}
+
+body .gambar h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: cursive;
+  opacity: 0;
+  margin-top: -10px;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+body .gambar img {
+  width: 70%;
+  margin-top: 50px;
+  opacity: 0;
+  animation: munculAtas 1.5s ease forwards;
+}
+
+body .pembungkus-form {
+  width: 40%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+body .pembungkus-form h4 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: cursive;
+  margin-top: -40px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+body .pembungkus-form .box-login {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px white;
+  margin-left: 50px;
+  opacity: 0;
+  animation: munculKiri 1.5s ease forwards;
+}
+
+body .pembungkus-form ul li {
+  list-style: none;
+  text-align: left;
+  padding-top: 5px;
+}
+
+body .pembungkus-form ul li label {
+  font-weight: bold;
+}
+
+body .pembungkus-form ul li .fa {
+  margin-right: 5px;
+}
+
+body .pembungkus-form ul li input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  padding: 2px 0;
+}
+
+body .pembungkus-form ul li button {
+  margin-top: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border: none;
+  background-color: #ccc;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+body .pembungkus-form ul li button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+body .pembungkus-form .alert {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  color: red;
+  border-radius: 5px;
+  border: 5px solid #ccc;
+  top: -300px;
+  right: 500px;
+  animation: alert 1s ease forwards;
+}
+
+body .pembungkus-form .alert .fa-close {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+body .pembungkus-form .alert .fa-close:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+/* animasi */
+@keyframes munculAtas {
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes munculKiri {
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes alert {
+  to {
+    top: 0;
+  }
+}
